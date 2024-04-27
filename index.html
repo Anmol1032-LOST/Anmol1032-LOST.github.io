@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>LOST</title>
     <style>
         body {
-            background: black;
+            background-image: radial-gradient(#003322, #001122, black);
             color: white;
+            text-align: center;
         }
+
         h1 {
+            font-size: 5rem;
             color: #00ffff;
             transition: all 1s;
         }
+
         h1:hover {
             color: #00ff88;
         }
+
+
+
         h2 {
+            font-size: 2.75rem;
             color: #00ff88;
             transition: all 1s;
         }
@@ -24,12 +32,15 @@
         }
 
         a {
-                    color: #00ff88;
-                    text-decoration: None;
-                    transition: all 1s;
+            color: #00ff88;
+            text-decoration: None;
+            transition: all 0.3s;
+
         }
         a:hover {
-                            color: #00ffff;
+            box-shadow: 0 0 5px cyan;
+            box-radius: 5px;
+            color: #00ffff;
         }
 
 
@@ -37,10 +48,12 @@
         @keyframes slide-from-left {
             from {
                 opacity: 0;
+                scale: 0;
                 transform: translateX(-100%);  /* Start from 100% off-screen to the left */
             }
             to {
                 opacity: 1;
+                scale: 1;
                 transform: translateX(0);  /* Animate to original position */
             }
         }
@@ -48,24 +61,28 @@
         @keyframes slide-from-right {
             from {
                 opacity: 0;
-                transform: translateX(200%);  /* Start from 100% off-screen to the left */
+                scale: 1.4;
+                transform: translateX(-100%);  /* Start from 100% off-screen to the left */
             }
             to {
                 opacity: 1;
+                scale: 1;
                 transform: translateX(0);  /* Animate to original position */
             }
         }
 
         h1,h2,h3 {
-        animation: slide-from-left 3s;
+        animation: slide-from-left 3s ease-out;
         }
 
-        p,ul,pre {
-           animation: slide-from-right 5s;
+        p {
+           font-size: 1.5rem;
+           animation: slide-from-right 5s ease-out;
+           text-shadow: 3px 3px 27px red;
         }
 
         .icon {
-        -webkit-animation: hue 2s infinite linear;
+        -webkit-animation: hue 4s infinite linear;
         }
 
         @-webkit-keyframes hue {
@@ -74,7 +91,7 @@
         }
 
         to {
-            -webkit-filter: hue-rotate(-360deg);
+            -webkit-filter: hue-rotate(360deg);
         }
     }
 
@@ -82,47 +99,55 @@
     </style>
 </head>
 <body>
+<div style="box-shadow: 0 0 10px white, 0 0 15px cyan, 0 0 20px red; border-radius:50px">
 <h1>L.O.S.T.</h1>
-<img   src="/Icon0256.png" class="icon" alt="icon">
+
+<img class="icon" src="/Icon0256.png" alt="Icon">
 
 <h2>Synonyms</h2>
-<ul>
-    <li><i>Luminosity of Stygian Transcendent</i></li>
-    <li> LOST</li>
-    <li> L.O.S.T.</li>
-    <li> Project _Alpha 32_</li>
-    <li> Project LOST</li>
-    <li> Project 518</li>
-</ul>
 
+<p><i>Luminosity of Stygian Transcendent</i></p>
+<p> LOST</p>
+<p> L.O.S.T.</p>
+<p> Project <i>Alpha 32</i></p>
+<p> Project LOST</p>
+<p> Project 518</p>
 <h2>What is LOST</h2>
-<p>Ok, if you are here and try to know what is LOST then you probably know me, am I right.
-    So, see what lost is, but before that you must need to know these terms:</p>
-<ul>
-    <li><i>Knowledge:</i> Any information that help you to do something or make you happy.</li>
-    <li><i>Word:</i> Any work done by you that uses *knowledge* or make you happy.</li>
-    <li><i>Beauty:</i> Anything that help in doing the work easyly and confortable or make you happy.</li>
-    <li><b>Happiness</b>: `Happiness = (Knowlege+Work)*Beauty`</li>
-</ul>
+<p>Ok, if you are here and try to know what is LOST then you probably know me<br/>
+    (So I did not need to introduce myself to you), am I right.<br/>
+    So, see what lost is, but before that you must need to know these terms:<br/><br/>
+    <i>Knowledge:</i> Any information that help you to do something or make you happy. <br/>
+    <i>Word:</i> Any work done by you that uses *knowledge* or make you happy. <br/>
+    <i>Beauty:</i> Anything that help in doing the work easyly and confortable or make you happy <br/>
+    <b>Happiness</b>: <span style="background: #113322 !important; border-radius: 5%; box-shadow: 0 0 8px white">`Happiness = (Knowlege+Work)*Beauty`</span>
+</p>
 
-<p> Now you are able to understand what I mean by LOST. But before that you shall know that this project will not be
-    open-source. Now see, Lost is also `(Knowlege+Work)*Beauty`, means it is like happiness. Anyways, Lost is a 3d
-    open-world progration-based mysterious game.
-    I am currently working on it. The game is based on a special theory that only I know. </p>
+<p> Now you are able to understand what I mean by LOST.<br/>
+    But before that you shall know that this project will not be open-source.<br/>
+    Now see, Lost is also <span style="background: #113322 !important; border-radius: 5%; box-shadow: 0 0 8px white">(Knowlege+Work)*Beauty</span>,<br/>
+    means it is like happiness.
+    Anyways, Lost is a 3d open-world propagation-based mysterious game.<br/>
+    I am currently working on it. It is based on a special <span
+            style="background: #241121 !important; border-radius: 15%; box-shadow: 0 0 8px cyan">theory</span> that only I know.</p>
 
 <p> The only drawback in this is that it is only for <b>desktop</b>. </p>
 
-<pre>
-Mathemetically:
-LOST ≈ Happiness ≈ (Work+Knowledge)*Beauty
-</pre>
 
+<p>
+    <span style="box-shadow: 0 0 8px white; border-radius:5px">
+    <i>Mathematically:</i>
+    <b>LOST ≈ Happiness ≈ (Work+Knowledge)*Beauty</b>
+    </span>
+</p>
 
 <h2> Other info </h2>
-<p>This account is only for "Lost", Anyway there is my first successful 2d game on my main account <a
-        href="https://github.com/Anmol1032/MusicDash">Music Dash</a></p>
+<p>This account is only for "Lost"
+    Anyway there is my first successful 2d game on my main account <a href="https://github.com/Anmol1032/MusicDash">Music
+        Dash</a><br/>
+    and also there is my first successful 3d game on my main account <a
+            href="https://github.com/Anmol1032/Game0001-TheBallGame">The Ball Game</a></p>
 
-<p>For more information about me check: <a href="https://github.com/Anmol1032">Anmol1032</a></p>
+<p>For more information about me check out: <a href="https://github.com/Anmol1032">Anmol1032</a></p></div>
 
 </body>
 </html>
