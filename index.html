@@ -8,6 +8,7 @@
             background-image: radial-gradient(#003322, #001122, black);
             color: white;
             text-align: center;
+
         }
 
         h1 {
@@ -48,12 +49,10 @@
         @keyframes slide-from-left {
             from {
                 opacity: 0;
-                scale: 0;
                 transform: translateX(-100%);  /* Start from 100% off-screen to the left */
             }
             to {
                 opacity: 1;
-                scale: 1;
                 transform: translateX(0);  /* Animate to original position */
             }
         }
@@ -61,13 +60,11 @@
         @keyframes slide-from-right {
             from {
                 opacity: 0;
-                scale: 1.4;
-                transform: translateX(-100%);  /* Start from 100% off-screen to the left */
+                scale: 0;
             }
             to {
                 opacity: 1;
                 scale: 1;
-                transform: translateX(0);  /* Animate to original position */
             }
         }
 
@@ -99,7 +96,7 @@
     </style>
 </head>
 <body>
-<div style="box-shadow: 0 0 10px white, 0 0 15px cyan, 0 0 20px red; border-radius:50px">
+<div style="box-shadow: 0 0 10px white, 0 0 15px cyan, 0 0 20px red; border-radius:50px; margin-left: 32px; margin-right: 32px">
     <h1>L.O.S.T.</h1>
 
     <img class="icon" src="/Icon0256.png" alt="Icon">
